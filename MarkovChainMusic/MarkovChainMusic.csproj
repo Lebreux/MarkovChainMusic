@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="MarkovChain.cs" />
     <Compile Include="MarkovChainOutput.cs" />
+    <Compile Include="Note.cs" />
+    <Compile Include="NoteLengths.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Scale.cs" />

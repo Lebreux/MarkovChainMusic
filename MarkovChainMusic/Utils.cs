@@ -14,5 +14,14 @@ namespace MarkovChainMusic
                 ints.Add(i);
             return ints.ToArray();
         }
+
+        internal static Note[] GetNoteRange(int[] relNoteValues, NoteLengths[] noteLengths)
+        {
+            List<Note> notes = new List<Note>();
+            foreach (int relNoteValue in relNoteValues)
+                foreach (NoteLengths noteLength in noteLengths)
+                    notes.Add(new Note(relNoteValue, noteLength));
+            return notes.ToArray();
+        }
     }
 }

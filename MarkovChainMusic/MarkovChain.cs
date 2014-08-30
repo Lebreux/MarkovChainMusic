@@ -9,7 +9,7 @@ namespace MarkovChainMusic
     {
         private Dictionary<List<T>, MarkovChainOutput<T>> _chain;
 
-        public MarkovChain(List<List<T>> elements, Random rand)
+        public MarkovChain(List<T> elements, int level, Random rand)
         {
             var permutations = new List<List<T>>();
             for (int i = 0; i < elements.Count; i++)
